@@ -1,0 +1,195 @@
+[INFO] main.py:42 > ###############################
+[INFO] main.py:43 > ##### Random Seed 1 Start #####
+[INFO] main.py:44 > ###############################
+[INFO] main.py:47 > _get_args: <bound method _AttributeHolder._get_args of Namespace(batchsize=16, coeff=0.5, dataset='cifar10', dataset_path='dataset/cifar10', debug=False, exp_name='blurry10', init_model=False, init_opt=True, log_path='results', lr=0.05, m=10, mem_manage='PuriDivER', memory_size=500, model_name='resnet18', n=50, n_cls_a_task=2, n_epoch=255, n_init_cls=10, n_tasks=5, n_worker=2, noise_rate=0.0, rnd_seed=['1', '2', '3'], robust_type='PuriDivER', topk=1, transforms=['autoaug', 'cutmix'], warmup=10)>
+_get_kwargs: <bound method _AttributeHolder._get_kwargs of Namespace(batchsize=16, coeff=0.5, dataset='cifar10', dataset_path='dataset/cifar10', debug=False, exp_name='blurry10', init_model=False, init_opt=True, log_path='results', lr=0.05, m=10, mem_manage='PuriDivER', memory_size=500, model_name='resnet18', n=50, n_cls_a_task=2, n_epoch=255, n_init_cls=10, n_tasks=5, n_worker=2, noise_rate=0.0, rnd_seed=['1', '2', '3'], robust_type='PuriDivER', topk=1, transforms=['autoaug', 'cutmix'], warmup=10)>
+batchsize: 16
+coeff: 0.5
+dataset: cifar10
+dataset_path: dataset/cifar10
+debug: False
+exp_name: blurry10
+init_model: False
+init_opt: True
+log_path: results
+lr: 0.05
+m: 10
+mem_manage: PuriDivER
+memory_size: 500
+model_name: resnet18
+n: 50
+n_cls_a_task: 2
+n_epoch: 255
+n_init_cls: 10
+n_tasks: 5
+n_worker: 2
+noise_rate: 0.0
+rnd_seed: ['1', '2', '3']
+robust_type: PuriDivER
+topk: 1
+transforms: ['autoaug', 'cutmix']
+warmup: 10
+[INFO] main.py:53 > Set the device (cuda)
+[INFO] main.py:79 > Using train-transforms Compose(
+    Resize(size=(32, 32), interpolation=bilinear, max_size=None, antialias=None)
+    RandomCrop(size=(32, 32), padding=4)
+    RandomHorizontalFlip(p=0.5)
+    AutoAugment CIFAR10 Policy
+    ToTensor()
+    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.2023, 0.1994, 0.201))
+)
+[INFO] main.py:98 > [1] Select a CIL method (PuriDivER/PuriDivER)
+[INFO] main.py:42 > ###############################
+[INFO] main.py:43 > ##### Random Seed 1 Start #####
+[INFO] main.py:44 > ###############################
+[INFO] main.py:47 > _get_args: <bound method _AttributeHolder._get_args of Namespace(batchsize=16, coeff=0.5, dataset='cifar10', dataset_path='dataset/cifar10', debug=False, exp_name='blurry10', init_model=False, init_opt=True, log_path='results', lr=0.05, m=10, mem_manage='PuriDivER', memory_size=500, model_name='resnet18', n=50, n_cls_a_task=2, n_epoch=255, n_init_cls=10, n_tasks=5, n_worker=2, noise_rate=0.0, rnd_seed=['1', '2', '3'], robust_type='PuriDivER', topk=1, transforms=['autoaug', 'cutmix'], warmup=10)>
+_get_kwargs: <bound method _AttributeHolder._get_kwargs of Namespace(batchsize=16, coeff=0.5, dataset='cifar10', dataset_path='dataset/cifar10', debug=False, exp_name='blurry10', init_model=False, init_opt=True, log_path='results', lr=0.05, m=10, mem_manage='PuriDivER', memory_size=500, model_name='resnet18', n=50, n_cls_a_task=2, n_epoch=255, n_init_cls=10, n_tasks=5, n_worker=2, noise_rate=0.0, rnd_seed=['1', '2', '3'], robust_type='PuriDivER', topk=1, transforms=['autoaug', 'cutmix'], warmup=10)>
+batchsize: 16
+coeff: 0.5
+dataset: cifar10
+dataset_path: dataset/cifar10
+debug: False
+exp_name: blurry10
+init_model: False
+init_opt: True
+log_path: results
+lr: 0.05
+m: 10
+mem_manage: PuriDivER
+memory_size: 500
+model_name: resnet18
+n: 50
+n_cls_a_task: 2
+n_epoch: 255
+n_init_cls: 10
+n_tasks: 5
+n_worker: 2
+noise_rate: 0.0
+rnd_seed: ['1', '2', '3']
+robust_type: PuriDivER
+topk: 1
+transforms: ['autoaug', 'cutmix']
+warmup: 10
+[INFO] main.py:53 > Set the device (cuda)
+[INFO] main.py:79 > Using train-transforms Compose(
+    Resize(size=(32, 32), interpolation=bilinear, max_size=None, antialias=None)
+    RandomCrop(size=(32, 32), padding=4)
+    RandomHorizontalFlip(p=0.5)
+    AutoAugment CIFAR10 Policy
+    ToTensor()
+    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.2023, 0.1994, 0.201))
+)
+[INFO] main.py:98 > [1] Select a CIL method (PuriDivER/PuriDivER)
+[INFO] main.py:109 > [2] Incrementally training 5 tasks
+[INFO] main.py:114 > ##################################################
+[INFO] main.py:115 > # Task 0 iteration
+[INFO] main.py:116 > ##################################################
+[INFO] main.py:117 > [2-1] Prepare a datalist for the current task
+collection name cifar10_split5_n50_m10_rand1_task0
+[INFO] data_loader.py:80 > [Train] Get datalist from cifar10_split5_n50_m10_rand1_task0.json
+[INFO] data_loader.py:112 > [Test ] Get datalist from cifar10_test_rand1_cls2_task0.json
+[INFO] data_loader.py:112 > [Test ] Get datalist from cifar10_test_rand1_cls2_task1.json
+[INFO] data_loader.py:112 > [Test ] Get datalist from cifar10_test_rand1_cls2_task2.json
+[INFO] data_loader.py:112 > [Test ] Get datalist from cifar10_test_rand1_cls2_task3.json
+[INFO] data_loader.py:112 > [Test ] Get datalist from cifar10_test_rand1_cls2_task4.json
+[INFO] main.py:134 > [2-2] Set environment for the current task
+[INFO] PuriDivER.py:793 > Apply before_task
+[INFO] PuriDivER.py:820 > Blurry! There is no modification on model fc layer!
+[INFO] PuriDivER.py:829 > Reset the optimizer and scheduler states
+[INFO] PuriDivER.py:837 > Increasing the head of fc 10 -> 10
+[INFO] main.py:141 > [2-3] Start to online train
+dataloader 625
+[INFO] PuriDivER.py:936 > [0/625] loss: 2.6220781803131104, diversity coeff: 0.19068844085354217, 120.59450149536133 msec
+[INFO] PuriDivER.py:936 > [1/625] loss: 2.6795430183410645, diversity coeff: 0.1865989822061359, 23.45871925354004 msec
+[INFO] PuriDivER.py:936 > [2/625] loss: 2.5077474117279053, diversity coeff: 0.19938212184435536, 18.517255783081055 msec
+[INFO] PuriDivER.py:936 > [3/625] loss: 1.9109059572219849, diversity coeff: 0.26165599521542354, 18.6922550201416 msec
+[INFO] PuriDivER.py:936 > [4/625] loss: 2.386737108230591, diversity coeff: 0.20949102365558617, 19.58751678466797 msec
+[INFO] PuriDivER.py:936 > [5/625] loss: 2.419288158416748, diversity coeff: 0.2066723628024594, 19.114971160888672 msec
+[INFO] PuriDivER.py:936 > [6/625] loss: 2.121112585067749, diversity coeff: 0.23572534693344901, 19.14501190185547 msec
+[INFO] PuriDivER.py:936 > [7/625] loss: 1.9958983659744263, diversity coeff: 0.25051375787659047, 18.605709075927734 msec
+[INFO] PuriDivER.py:936 > [8/625] loss: 1.9200845956802368, diversity coeff: 0.2604051931487231, 18.216609954833984 msec
+[INFO] PuriDivER.py:936 > [9/625] loss: 1.8927241563796997, diversity coeff: 0.26416950315484583, 18.19896697998047 msec
+[INFO] PuriDivER.py:936 > [10/625] loss: 1.9600896835327148, diversity coeff: 0.25509036867070206, 19.21701431274414 msec
+[INFO] PuriDivER.py:936 > [11/625] loss: 2.033552408218384, diversity coeff: 0.24587514832630017, 20.418405532836914 msec
+[INFO] PuriDivER.py:936 > [12/625] loss: 1.7552597522735596, diversity coeff: 0.2848581239057969, 33.25700759887695 msec
+[INFO] PuriDivER.py:936 > [13/625] loss: 2.1104896068573, diversity coeff: 0.23691185134265735, 33.15615653991699 msec
+[INFO] PuriDivER.py:936 > [14/625] loss: 2.2101011276245117, diversity coeff: 0.22623399162617333, 35.67671775817871 msec
+[INFO] PuriDivER.py:936 > [15/625] loss: 2.012310028076172, diversity coeff: 0.24847065960209663, 38.469791412353516 msec
+[INFO] PuriDivER.py:936 > [16/625] loss: 2.1820473670959473, diversity coeff: 0.229142596783058, 38.22612762451172 msec
+[INFO] PuriDivER.py:936 > [17/625] loss: 2.1672215461730957, diversity coeff: 0.23071014630825615, 38.869619369506836 msec
+[INFO] PuriDivER.py:936 > [18/625] loss: 1.9618556499481201, diversity coeff: 0.25486074880851817, 37.51063346862793 msec
+[INFO] PuriDivER.py:936 > [19/625] loss: 1.9934595823287964, diversity coeff: 0.25082023454716385, 37.66036033630371 msec
+[INFO] PuriDivER.py:936 > [20/625] loss: 1.6298832893371582, diversity coeff: 0.30677043152171973, 36.19861602783203 msec
+[INFO] PuriDivER.py:936 > [21/625] loss: 1.8925669193267822, diversity coeff: 0.264191450719142, 37.973880767822266 msec
+[INFO] PuriDivER.py:936 > [22/625] loss: 1.9303162097930908, diversity coeff: 0.25902491905903574, 38.28024864196777 msec
+[INFO] PuriDivER.py:936 > [23/625] loss: 1.706117868423462, diversity coeff: 0.2930629877653324, 38.2542610168457 msec
+[INFO] PuriDivER.py:936 > [24/625] loss: 1.5966461896896362, diversity coeff: 0.31315641701258334, 38.22684288024902 msec
+[INFO] PuriDivER.py:936 > [25/625] loss: 2.3159420490264893, diversity coeff: 0.21589486671748803, 38.74826431274414 msec
+[INFO] PuriDivER.py:936 > [26/625] loss: 2.080944061279297, diversity coeff: 0.24027556016696394, 37.58645057678223 msec
+[INFO] PuriDivER.py:936 > [27/625] loss: 1.7070618867874146, diversity coeff: 0.2929009216771685, 37.75167465209961 msec
+[INFO] PuriDivER.py:936 > [28/625] loss: 1.598854422569275, diversity coeff: 0.3127239059054084, 37.29534149169922 msec
+[INFO] PuriDivER.py:936 > [29/625] loss: 1.5322786569595337, diversity coeff: 0.3263114040837316, 37.810564041137695 msec
+[INFO] PuriDivER.py:936 > [30/625] loss: 1.9574981927871704, diversity coeff: 0.2554280774523109, 37.836551666259766 msec
+[INFO] PuriDivER.py:936 > [31/625] loss: 1.8956611156463623, diversity coeff: 0.26376022374100094, 777.8370380401611 msec
+[INFO] PuriDivER.py:936 > [32/625] loss: 1.9457565546035767, diversity coeff: 0.25696945428091783, 808.4735870361328 msec
+[INFO] PuriDivER.py:936 > [33/625] loss: 0.8823277950286865, diversity coeff: 0.5, 811.4116191864014 msec
+[INFO] main.py:42 > ###############################
+[INFO] main.py:43 > ##### Random Seed 1 Start #####
+[INFO] main.py:44 > ###############################
+[INFO] main.py:47 > _get_args: <bound method _AttributeHolder._get_args of Namespace(batchsize=16, coeff=0.5, dataset='cifar10', dataset_path='dataset/cifar10', debug=False, exp_name='blurry10', init_model=False, init_opt=True, log_path='results', lr=0.05, m=10, mem_manage='PuriDivER', memory_size=500, model_name='resnet18', n=50, n_cls_a_task=2, n_epoch=255, n_init_cls=10, n_tasks=5, n_worker=32, noise_rate=0.0, noisy_percent=60, rnd_seed=['1'], robust_type='PuriDivER', topk=1, transforms=['autoaug', 'cutmix'], warmup=10)>
+_get_kwargs: <bound method _AttributeHolder._get_kwargs of Namespace(batchsize=16, coeff=0.5, dataset='cifar10', dataset_path='dataset/cifar10', debug=False, exp_name='blurry10', init_model=False, init_opt=True, log_path='results', lr=0.05, m=10, mem_manage='PuriDivER', memory_size=500, model_name='resnet18', n=50, n_cls_a_task=2, n_epoch=255, n_init_cls=10, n_tasks=5, n_worker=32, noise_rate=0.0, noisy_percent=60, rnd_seed=['1'], robust_type='PuriDivER', topk=1, transforms=['autoaug', 'cutmix'], warmup=10)>
+batchsize: 16
+coeff: 0.5
+dataset: cifar10
+dataset_path: dataset/cifar10
+debug: False
+exp_name: blurry10
+init_model: False
+init_opt: True
+log_path: results
+lr: 0.05
+m: 10
+mem_manage: PuriDivER
+memory_size: 500
+model_name: resnet18
+n: 50
+n_cls_a_task: 2
+n_epoch: 255
+n_init_cls: 10
+n_tasks: 5
+n_worker: 32
+noise_rate: 0.0
+noisy_percent: 60
+rnd_seed: ['1']
+robust_type: PuriDivER
+topk: 1
+transforms: ['autoaug', 'cutmix']
+warmup: 10
+[INFO] main.py:53 > Set the device (cuda)
+[INFO] main.py:79 > Using train-transforms Compose(
+    Resize(size=(32, 32), interpolation=bilinear, max_size=None, antialias=None)
+    RandomCrop(size=(32, 32), padding=4)
+    RandomHorizontalFlip(p=0.5)
+    AutoAugment CIFAR10 Policy
+    ToTensor()
+    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.2023, 0.1994, 0.201))
+)
+[INFO] main.py:98 > [1] Select a CIL method (PuriDivER/PuriDivER)
+[INFO] main.py:109 > [2] Incrementally training 5 tasks
+[INFO] main.py:114 > ##################################################
+[INFO] main.py:115 > # Task 0 iteration
+[INFO] main.py:116 > ##################################################
+[INFO] main.py:117 > [2-1] Prepare a datalist for the current task
+[INFO] data_loader.py:81 > [Train] Get datalist from cifar10_train_increment50_blurry10_symN60_rand1_task0.json
+[INFO] data_loader.py:113 > [Test ] Get datalist from cifar10_test_rand1_cls2_task0.json
+[INFO] data_loader.py:113 > [Test ] Get datalist from cifar10_test_rand1_cls2_task1.json
+[INFO] data_loader.py:113 > [Test ] Get datalist from cifar10_test_rand1_cls2_task2.json
+[INFO] data_loader.py:113 > [Test ] Get datalist from cifar10_test_rand1_cls2_task3.json
+[INFO] data_loader.py:113 > [Test ] Get datalist from cifar10_test_rand1_cls2_task4.json
+[INFO] main.py:134 > [2-2] Set environment for the current task
+[INFO] PuriDivER.py:793 > Apply before_task
+[INFO] PuriDivER.py:820 > Blurry! There is no modification on model fc layer!
+[INFO] PuriDivER.py:829 > Reset the optimizer and scheduler states
+[INFO] PuriDivER.py:837 > Increasing the head of fc 10 -> 10
+[INFO] main.py:141 > [2-3] Start to online train
+dataloader 625
